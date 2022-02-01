@@ -15,15 +15,6 @@ That said, feel free to connect to your Postgres database using `psql` or pgAdmi
 
 ## Instructions
 
-### M1 Instructions
-
-If you have an Apple M1 machine, please follow those instructions before completing the setup part of the instructions, do not do them if you're not on an M1 machine!
-
-1. Confirm that you are running version 2.6.6 of ruby (ruby -v)
-2. Remove the Gemfile.lock file
-3. In Gemfile, change the version of ActiveRecord from `4.2.6` to `4.2.11`
-4. In Gemfile, change the `gem 'pg'` line to `gem 'pg', '~> 0.21.0'`
-
 ### Setup
 
 1. Create a new Postgres database. Use `psql postgres` to connect to the database server. Use `create database ar_exercises;` to create the database.
