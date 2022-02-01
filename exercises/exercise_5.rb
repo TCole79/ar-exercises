@@ -25,5 +25,5 @@ puts "The annual revenue is $#{@total_annual_revenue}"
 puts "The average annual store revenue is $#{@average_revenue}"
 
 #3
-@big_bucks_stores = Store.where(:annual_revenue > 1000000).count
+@big_bucks_stores = Store.where('annual_revenue > 1000000').size
 puts "The number of stores generating $1mio + annualy is ##{@big_bucks_stores}"
